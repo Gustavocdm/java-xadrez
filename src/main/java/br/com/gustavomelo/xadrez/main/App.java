@@ -1,4 +1,4 @@
-package br.com.gustavomelo.xadrez.gustavomelo.xadrez;
+package br.com.gustavomelo.xadrez.main;
 
 public class App {
 	
