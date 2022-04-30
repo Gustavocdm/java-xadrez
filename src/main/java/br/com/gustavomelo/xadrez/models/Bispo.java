@@ -10,7 +10,7 @@ public class Bispo extends Peca {
 	}
 
 	@Override
-	public void mover() {
+	public void listarMovimentosPossiveis() {
 
 	}
 

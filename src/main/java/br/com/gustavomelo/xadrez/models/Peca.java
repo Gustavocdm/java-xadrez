@@ -13,7 +13,7 @@ public abstract class Peca {
 		this.posicao = posicao;
 	}
 	
-	public abstract void mover();
+	public abstract void listarMovimentosPossiveis();
 	
 	public Cor getCor() {
 		return cor;
@@ -29,6 +29,10 @@ public abstract class Peca {
 
 	public Posicao getPosicao() {
 		return posicao;
+	}
+	
+	public void setPosicao(Posicao posicao) {
+		this.posicao = posicao;
 	}
 }
 

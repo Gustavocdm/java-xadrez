@@ -10,7 +10,7 @@ public class Peao extends Peca {
 	}
 
 	@Override
-	public void mover() {
+	public void listarMovimentosPossiveis() {
 		
 	}
 
