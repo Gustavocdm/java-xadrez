@@ -16,10 +16,6 @@ public abstract class Peca {
 		return cor;
 	}
 
-	public void setCor(Cor cor) {
-		this.cor = cor;
-	}
-
 	public int getNumeroDeJogadas() {
 		return numeroDeJogadas;
 	}
