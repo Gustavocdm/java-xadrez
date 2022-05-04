@@ -15,35 +15,35 @@ public class PosicaoTest {
 	private static final int POSICAO_VALIDA = 1;
 	
 	@Test
-	public void construtor_deveLancarPosicaoInvalidaException_seLinhaPassadaForMenorQueOPermitido() throws PosicaoInvalidaException {
+	public void construtor_deveLancarPosicaoInvalidaException_seLinhaPassadaForMenorQueOPermitido() {
 		assertThrows(PosicaoInvalidaException.class, () -> {
 			new Posicao(POSICAO_ABAIXO_DO_MINIMO, POSICAO_VALIDA);
 		});
 	}
 	
 	@Test
-	public void construtor_deveLancarPosicaoInvalidaException_seLinhaPassadaForMaiorQueOPermitido() throws PosicaoInvalidaException {
+	public void construtor_deveLancarPosicaoInvalidaException_seLinhaPassadaForMaiorQueOPermitido() {
 		assertThrows(PosicaoInvalidaException.class, () -> {
 			new Posicao(POSICAO_VALIDA, POSICAO_ACIMA_DO_MAXIMO);
 		});
 	}
 	
 	@Test
-	public void construtor_deveLancarPosicaoInvalidaException_seColunaPassadaForMenorQueOPermitido() throws PosicaoInvalidaException {
+	public void construtor_deveLancarPosicaoInvalidaException_seColunaPassadaForMenorQueOPermitido() {
 		assertThrows(PosicaoInvalidaException.class, () -> {
 			new Posicao(POSICAO_ABAIXO_DO_MINIMO, POSICAO_VALIDA);
 		});
 	}
 	
 	@Test
-	public void construtor_deveLancarPosicaoInvalidaException_seColunaPassadaForMaiorQueOPermitido() throws PosicaoInvalidaException {
+	public void construtor_deveLancarPosicaoInvalidaException_seColunaPassadaForMaiorQueOPermitido() {
 		assertThrows(PosicaoInvalidaException.class, () -> {
 			new Posicao(POSICAO_VALIDA, POSICAO_ACIMA_DO_MAXIMO);
 		});
 	}
 	
 	@Test
-	public void construtor_deveSerInstanciadoComSucesso_seLinhaEColunaPassadosForemValido() throws PosicaoInvalidaException {
+	public void construtor_deveSerInstanciadoComSucesso_seLinhaEColunaPassadosForemValido() {
 		assertDoesNotThrow(() -> {
 			new Posicao(POSICAO_VALIDA, POSICAO_VALIDA);
 		});

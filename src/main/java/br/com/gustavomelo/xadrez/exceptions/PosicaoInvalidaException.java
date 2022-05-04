@@ -1,6 +1,6 @@
 package br.com.gustavomelo.xadrez.exceptions;
 
-public class PosicaoInvalidaException extends Exception {
+public class PosicaoInvalidaException extends RuntimeException {
 	private final static String MENSAGEM_ERRO = "Essa não é uma posição válida!";
 
 	public PosicaoInvalidaException() {

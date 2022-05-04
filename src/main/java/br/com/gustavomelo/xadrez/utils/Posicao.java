@@ -9,7 +9,7 @@ public class Posicao {
 	private int linha;
 	private int coluna;
 	
-	public Posicao(int linha, int coluna) throws PosicaoInvalidaException {
+	public Posicao(int linha, int coluna) {
 		setLinha(linha);
 		setColuna(coluna);
 	}
@@ -18,7 +18,7 @@ public class Posicao {
 		return linha;
 	}
 
-	public void setLinha(int linha) throws PosicaoInvalidaException {
+	public void setLinha(int linha) {
 		if (posicaoInvalida(linha)) {
 			throw new PosicaoInvalidaException();
 		}
@@ -29,7 +29,7 @@ public class Posicao {
 		return coluna;
 	}
 
-	public void setColuna(int coluna) throws PosicaoInvalidaException {
+	public void setColuna(int coluna) {
 		if (posicaoInvalida(coluna)) {
 			throw new PosicaoInvalidaException();
 		}
